@@ -3,6 +3,6 @@ import { Component } from '@angular/core';
 /** Vista de inicio (landing). El contenido se agrega sesion a sesion. */
 @Component({
   selector: 'app-home',
-  template: '',
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {}
