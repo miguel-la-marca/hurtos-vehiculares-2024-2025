@@ -1,0 +1,28 @@
+.page {
+  min-height: 100vh;
+  padding: 2rem 1.25rem;
+  background-color: var(--bg-page);
+}
+
+.page__surface {
+  max-width: 1200px;
+  min-height: calc(100vh - 4rem);
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 6%),
+    0 12px 32px rgb(0 0 0 / 5%);
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1rem 0.75rem;
+  }
+
+  .page__surface {
+    min-height: calc(100vh - 2rem);
+    padding: 1.25rem;
+  }
+}

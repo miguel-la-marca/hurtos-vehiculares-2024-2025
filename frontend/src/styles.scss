@@ -1,0 +1,65 @@
+/* Tokens visuales definidos en REGLAS.md */
+:root {
+  --bg-page: #f5f4f0;
+  --surface: #fffffd;
+  --ink: #1b1b1b;
+  --muted: #6b6b6b;
+  --line: #e3e1db;
+
+  /* Bordes de los cuadros de codigo */
+  --code-python-border: #ffd700;
+  --code-r-border: #00bfff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-page);
+  color: var(--ink);
+  font-family: Roboto, 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Etiqueta que precede a un cuadro de codigo (Python / R) */
+.code-block__label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Cuadro de codigo: fondo negro y bordes redondeados */
+.code-block {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: #000;
+  color: #e6e6e6;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 4;
+}
+
+/* Python -> borde dorado */
+.code-block--python {
+  border-color: var(--code-python-border);
+}
+
+/* R -> borde celeste */
+.code-block--r {
+  border-color: var(--code-r-border);
+}
